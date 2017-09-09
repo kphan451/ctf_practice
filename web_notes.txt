@@ -63,21 +63,21 @@ github.com/intrepediusgroup/mallory
 
 decode session key: decoding tab in burpsuite
 
-Good burpsuite tabs: repeater, intruder
+good burpsuite tabs: repeater, intruder
 
 also test POST verb, instead of just GET
 try to modify POST parameters
 
 check for crossdomain.xml
 
-Flare: flash decompiler, nowarp.de
+flare: flash decompiler, nowarp.de
 
 SWFInvestigator
 
 JAD, Procyon: java decompiler
 bitbuck.org/mstrobel/procyon/wiki/Java%20Decompiler
 
-Soapui: test SOAP app
+soapui: test SOAP app
 
 wsfuzzer: owasp project for testing SOAP
 
@@ -118,6 +118,4 @@ execScript code
 
 ModSecurity bypass:
 %23%2f%2a%0a
-
-
 
