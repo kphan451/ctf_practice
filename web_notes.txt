@@ -1,0 +1,2 @@
+I combed the internet for good tips for solving web CTF challenges. 
+
