@@ -1,5 +1,19 @@
 I combed the internet for good tips for solving web CTF challenges. 
 
+directory traversal (encoded)
+
+url tampering
+
+url encoding
+
+xxd for hex encoding
+
+check for LFI/RFI
+
+sqli
+
+check strength of key: how big is search space? 
+
 wireshark:
 "follow tcp stream" to understand web interaction
 
@@ -33,6 +47,14 @@ special char: /, *, @
 
 websocket: ws://, wss://
 rfc6455
+cross site websocket hijacking (CSWH)
+does not use same origin policy (SOP)
+
+HTTP/2: rfc7540
+tools: mitmproxy, nghttp, python hyper, http2fuzz
+
+
+
 
 
 
