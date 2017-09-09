@@ -9,10 +9,49 @@ url encoding
 xxd for hex encoding
 
 check for LFI/RFI
+php://filter/read=convert.base64-encode/resource=filename
+data://, php://input
+<?php phpinfo(); ?>
+
+log files:
+/var/log/httpd/access_log
+/var/log/auth.log
+
+code execution:
+<?php passthru(); ?>
+<?php system(); ?>
+ASP: <$ Shell() %>
+
+create new file: 
+php - fopen, fwrite; asp - FileSystemObject
+
+php type juggling
+
+web shells:
+laudanum.sourceforge.net
 
 use UNICODE to bypass filtering
 
+web frameworks are now model-view-controller (MVC)
+
+MEAN stack: mongoDB, expressJS, angularJS, nodeJS
+
+wpscan: wordpress scanner
+
 sqli
+auth bypass with sqli
+php -r "echo urldecode(file_get_contents('php://stdin'));"
+
+xss: reflected, persistent
+
+dom xss
+<script>document.write(unescape(document.location))</script> 
+
+xsrf
+
+file upload
+
+priv escalation thru cookie or parameter modification
 
 check strength of key: how big is search space? 
 
