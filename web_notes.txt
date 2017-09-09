@@ -1,2 +1,47 @@
 I combed the internet for good tips for solving web CTF challenges. 
 
+wireshark:
+"follow tcp stream" to understand web interaction
+
+mallory: transparent proxy
+github.com/intrepediusgroup/mallory
+
+decode session key: decoding tab in burpsuite
+
+Good burpsuite tabs: repeater, intruder
+
+also test POST verb, instead of just GET
+try to modify POST parameters
+
+check for crossdomain.xml
+
+Flare: flash decompiler, nowarp.de
+
+SWFInvestigator
+
+JAD, Procyon: java decompiler
+bitbuck.org/mstrobel/procyon/wiki/Java%20Decompiler
+
+Soapui: test SOAP app
+
+wsfuzzer: owasp project for testing SOAP
+
+use XML entity to ref external data (similar idea to LFI/RFI)
+
+check for XPATH injection
+special char: /, *, @
+
+websocket: ws://, wss://
+rfc6455
+
+
+
+
+
+
+
+
+
+
+
+
