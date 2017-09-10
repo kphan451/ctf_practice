@@ -119,3 +119,10 @@ execScript code
 ModSecurity bypass:
 %23%2f%2a%0a
 
+decompile client-side code:
+logic flaws
+input validation
+server-side APIs
+data storage
+
+
