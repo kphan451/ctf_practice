@@ -42,6 +42,12 @@ sqli
 auth bypass with sqli
 php -r "echo urldecode(file_get_contents('php://stdin'));"
 
+c99 php shell
+
+serialization issues
+
+interactive php: php -a
+
 xss: reflected, persistent
 
 dom xss
@@ -69,17 +75,33 @@ also test POST verb, instead of just GET
 try to modify POST parameters
 
 check for crossdomain.xml
+site-control, allow-access-from, allow-http-request-headers-from
 
 flare: flash decompiler, nowarp.de
 
 SWFInvestigator
 
 JAD, Procyon: java decompiler
-bitbuck.org/mstrobel/procyon/wiki/Java%20Decompiler
+bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler
+
+ysoserial - java decompiler
+
+json: javascript object notation
+
+nosql injection: db.eval(), mapreduce, group operators
+$ne, $where, $gt $lt
+
+expressJS injection: res.end(), require('fs'), readdirSync(), readFileSync()
+
+wappalyzer: plugin for firefox
 
 soapui: test SOAP app
 
+fiddler
+
 wsfuzzer: owasp project for testing SOAP
+
+wsdler: burp plugin for SOAP
 
 use XML entity to ref external data (similar idea to LFI/RFI)
 
@@ -124,5 +146,7 @@ logic flaws
 input validation
 server-side APIs
 data storage
+
+justdecompile: silverlight XAP decompiler
 
 
